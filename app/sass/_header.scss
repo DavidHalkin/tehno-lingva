@@ -1,0 +1,81 @@
+.navbar{
+	min-height: 110px;
+	width: 100%;
+	background: #008de7;
+	background: -moz-linear-gradient(top, #008de7 0%, #008de7 36%, #0083db 65%, #0084d7 66%, #017ed2 80%, #007cce 81%, #017bce 83%, #017ac9 86%, #007aca 89%, #0277c4 94%, #0077c5 100%);
+	background: -webkit-linear-gradient(top, #008de7 0%,#008de7 36%,#0083db 65%,#0084d7 66%,#017ed2 80%,#007cce 81%,#017bce 83%,#017ac9 86%,#007aca 89%,#0277c4 94%,#0077c5 100%);
+	background: linear-gradient(to bottom, #008de7 0%,#008de7 36%,#0083db 65%,#0084d7 66%,#017ed2 80%,#007cce 81%,#017bce 83%,#017ac9 86%,#007aca 89%,#0277c4 94%,#0077c5 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#008de7', endColorstr='#0077c5',GradientType=0 );
+	border-radius:0;
+	border: 0;
+	margin-bottom: 0;
+	.navbar-brand{
+		width: 235px;
+		height: 70px;
+		font-size: 0;
+		background: url(../images/logo.png) no-repeat;
+		margin: 6px 0 0 0;
+		padding: 0;
+		line-height: 0;
+		text-indent: -9999px;
+		overflow: hidden;
+		outline: none;
+	}
+	a{
+		border-bottom: 0;
+	}
+	.navbar-toggle .icon-bar{
+		background: #fff;
+	}
+	.navbar-nav{
+		padding: 42px 0 0 0;
+		> li{
+			padding: 0;
+			margin: 0;
+			li{
+				padding: 0;
+				margin: 0;
+				&.dropdown-header{
+					padding: 3px 20px;
+				}
+				&.divider{
+					margin: 9px 0;
+				}
+				&:before{
+					content: none;
+				}
+			}
+			&:before{
+				content: none;
+			}
+			> a{
+				color: #fff;
+				text-transform: uppercase;
+				font-family: 'Proxima Nova Medium';
+			}
+		}
+	}
+}
+.call-h{
+	background: #2774be;
+	padding: 35px 35px 0;
+	height: 110px;
+	a{
+		.fa{
+			position: relative;
+			bottom: -2px;
+		}
+		color: #fff;
+		font: 14px/20px 'Proxima Nova Medium';
+		&:hover,&:active,&:focus{
+			color: #fff;
+			border-bottom-color: transparent;
+		}
+	}
+	span{
+		display: block;
+		a{
+			border-bottom: 1px solid rgba(#fff,.3);
+		}
+	}
+}

@@ -1,0 +1,130 @@
+footer{
+	padding: 0 15px 33px;
+	background: #d2d2d2;
+	color: #707070;
+	width: 100%;
+	// overflow: hidden;
+	border-bottom: 7px solid #c6c6c6;
+	&:after,&:before{
+		display: table;
+		clear: both;
+		content: '';
+	}
+	.copy{
+		display: block;
+		text-align: center;
+	}
+	.footer-blue{
+		width: 100%;
+		max-width: 1130px;
+		margin: 0 auto 0;
+		margin-top: -50px;
+		background: #2e8ce4;
+		color: #fff;
+		display: table;
+		table-layout: fixed;
+		a{
+			color: #fff;
+		}
+		.td{
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			padding: 32px 40px;
+			position: relative;
+			font-size: 17px;
+			line-height: 22px;
+			width: 33.33%;
+			&:first-child:before{
+				content: none;
+			}
+			&:before{
+				width: 22px;
+				height: 100%;
+				content: "";
+				background-repeat: no-repeat;
+				background-size: 0 100%, 15px 100%;
+				bottom: -20px;
+				display: block;
+				position: absolute;
+				top: 0;
+				left: -22px;
+				background-image: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 75%, transparent), -webkit-radial-gradient(100% 50%, farthest-side, rgba(0, 0, 0, 0.5), transparent);
+				background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.3) 25%, rgba(0, 0, 0, 0.3) 75%, transparent), radial-gradient(100% 50%, farthest-side, rgba(0, 0, 0, 0.5), transparent);
+				background-position: 100% 0, 100% 0;
+				opacity: .3;
+			}
+			a{
+				border-bottom: 1px solid rgba(#fff,.3);
+				&:hover{
+					border-bottom-color: transparent;
+				}
+			}
+			strong a{
+				border-bottom-color: transparent;
+			}
+			span{display: block;}
+			strong{
+				font-weight: normal;
+				font-family: 'Proxima Nova Medium';
+			}
+			.fa{
+				font-size: 37px;
+				position: absolute;
+				left: 40px;
+				top: 50%;
+				transform:translateY(-50%);
+			}
+		}
+	}
+}
+.footer-nav{
+	margin: 0;
+	padding: 90px 0 0;
+	list-style: none;
+	text-align: center;
+	font-size: 0;
+	li{
+		padding: 0 23px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		&:first-child:before{
+			content: none;
+		}
+		&:before{
+			width: 1px;
+			height: 21px;
+			background: #bebebe;
+			border-radius:0;
+			top: 0;
+			left: 0;
+		}
+		a{
+			font-size: 17px;
+			line-height: 20px;
+			color: #707070;
+			border-bottom: 0;
+		}
+	}
+}
+.soc{
+	margin: 0;
+	padding: 12px 0 20px 0;
+	font-size: 0;
+	text-align: center;
+	li{
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+		padding: 0 5px;
+		font-size: 23px;
+		&:before{
+			content: none;
+		}
+		a{
+			color: #707070;
+			border-bottom: 0;
+		}
+	}
+}
