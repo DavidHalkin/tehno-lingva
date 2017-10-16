@@ -35,6 +35,11 @@ footer{
 			font-size: 17px;
 			line-height: 22px;
 			width: 33.33%;
+			@media (max-width: 700px){
+				display: block;
+				width: 100%;
+				padding: 10px;
+			}
 			&:first-child:before{
 				content: none;
 			}
@@ -74,6 +79,13 @@ footer{
 				left: 40px;
 				top: 50%;
 				transform:translateY(-50%);
+				@media (max-width: 890px){
+					position: static;
+					transform:none;
+					display: block;
+					text-align: center;
+					padding-bottom: 10px;
+				}
 			}
 		}
 	}
@@ -84,11 +96,21 @@ footer{
 	list-style: none;
 	text-align: center;
 	font-size: 0;
+	@media (max-width: 700px){
+		padding-top: 20px;
+	}
 	li{
 		padding: 0 23px;
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0;
+		@media (max-width: 950px){
+			padding: 0 10px;
+			&:before{
+				content: none;
+			}
+		}
+
 		&:first-child:before{
 			content: none;
 		}
@@ -119,6 +141,7 @@ footer{
 		margin: 0;
 		padding: 0 5px;
 		font-size: 23px;
+		
 		&:before{
 			content: none;
 		}

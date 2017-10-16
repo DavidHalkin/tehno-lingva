@@ -42,6 +42,7 @@ $primary-color: #8b8b8b;
 body{
 	font: 16px/19px $font-reg;
 	color: $primary-color;
+	min-width: 320px;
 }
 a{
 	color: #2e8ce4;
@@ -170,7 +171,7 @@ ol{
 }
 
 blockquote{
-	padding: 5px 0 5px 0;
+	padding: 0;
 	margin: 10px 0 20px;
 	font-size: 18px;
 	line-height: 22px;
@@ -204,5 +205,73 @@ blockquote{
 	max-width: 600px;
 }
 main{
-	padding-bottom: 50px;
+	padding: 0 15px 150px;
+	@media (max-width: 900px){
+		padding-bottom: 100px;
+	}
+}
+.custom-light-box{
+	width: 100%;
+	max-width: 500px;
+}
+.form-control{
+	border-radius:0;
+	border-color: #ababab;
+	font-size: 17px;
+	color: #ababab;
+	height: 38px;
+}
+.btn-default{
+	background: #2e8ce4;
+	border-radius:0;
+	text-transform: uppercase;
+	font-size: 17px;
+	color: #fff;
+	border: 0;
+	box-shadow: 5px 5px 10px 0px rgba(#000,.26);
+	&:hover,&:active,&:focus{
+		background: #2e8ce4 !important;
+		color: #fff !important;
+		border: 0;
+		opacity: .9;
+	}
+}
+.breadcrumbs{
+	margin: 0;
+	padding: 40px 0 25px;
+	list-style: none;
+	li{
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0;
+		padding: 0 20px;
+		padding: 0 40px 0 0;
+		display: inline-block;
+		vertical-align: middle;
+		&:first-child{
+			padding-left: 0;
+			a{
+				color: #2e8ce4;
+			}
+		}
+		&:before,&:last-child:after{
+			content: none;
+		}
+		&:after{
+			content: '>';
+			position: absolute;
+			top: 1px;
+			right: 15px;
+			font-size: 16px;
+			line-height: 20px;
+			color: #000;
+		}
+		&:first-child{
+			font-size: 22px;
+		}
+		a{
+			border-bottom: 0;
+			color: #000;
+		}
+	}
 }

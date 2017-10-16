@@ -9,17 +9,53 @@
 	border-radius:0;
 	border: 0;
 	margin-bottom: 0;
+	@media (max-width: 767px){
+		min-height: auto;
+		padding: 6px 0 10px;
+	}
+	.navbar-collapse{
+		@media (max-width: 767px){
+			border-top-color: #fff;
+			margin-top: 15px;
+		}
+	}
+	.navbar-toggle{
+		@media (max-width: 767px){
+			margin-top: 15px;
+		}
+	}
 	.navbar-brand{
 		width: 235px;
 		height: 70px;
 		font-size: 0;
 		background: url(../images/logo.png) no-repeat;
-		margin: 6px 0 0 0;
+		margin: 0 ;
 		padding: 0;
 		line-height: 0;
 		text-indent: -9999px;
 		overflow: hidden;
 		outline: none;
+		position: absolute;
+		left: 15px;
+		margin: 0 !important;
+		top: 6px;
+		@media (max-width: 1130px){
+			width: 60px;
+			height: 70px;
+			background: url(../images/logo-mob.png) no-repeat;
+		}
+		@media (max-width: 767px){
+			position: static;
+			margin: 0 0 0 15px !important;
+			width: 43px;
+			height: 50px;
+			background-size: cover;
+		}
+	}
+	.container{
+		max-width: 1200px !important;
+		width: 100% !important;
+		position: relative;
 	}
 	a{
 		border-bottom: 0;
@@ -29,9 +65,63 @@
 	}
 	.navbar-nav{
 		padding: 42px 0 0 0;
+		max-width: 600px;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+		@media (max-width: 767px){
+			padding-top: 15px;
+			max-width: none;
+		}
 		> li{
 			padding: 0;
-			margin: 0;
+			margin: 15px;
+			&.active > a{
+				border-bottom: 1px solid rgba(#fff,.8) !important;
+			}
+			&:first-child{
+				margin-left: 0;
+			}
+			&.open{
+				background: none !important;
+			}
+			> a,&.open > a{
+				padding: 0;
+				background: none !important;
+				&:hover,&:focus,&:active{
+					background: none !important;
+					color: #fff;
+					border-bottom: 1px solid rgba(#fff,.8) !important;
+				}
+			}
+			@media (max-width: 767px){
+				&.active > a{
+					border-bottom: 0 !important;
+					background: #2774be !important;
+				}
+				margin: 0 !important;
+				> a,&.open a{
+					padding: 5px 15px;
+					border-bottom: 0 !important;
+
+					&:hover,&:focus,&:active{
+						border-bottom: 0 !important;
+					}
+				}
+				ul{
+					padding-left: 20px;
+					li.dropdown-header{
+						color: #fff !important;
+						padding-left: 15px !important;
+					}
+					a{
+						color: #fff;
+						&:hover{
+							background: none;
+						}
+					}
+				}
+			}
 			li{
 				padding: 0;
 				margin: 0;
@@ -60,6 +150,17 @@
 	background: #2774be;
 	padding: 35px 35px 0;
 	height: 110px;
+	position: absolute;
+	top: 0;
+	right: 15px;
+	@media (max-width: 767px){
+		position: static;
+		float: none !important;
+		width: auto;
+		padding: 15px;
+		height: auto;
+		margin: 15px -15px 0;
+	}
 	a{
 		.fa{
 			position: relative;
