@@ -198,6 +198,7 @@
     float: none !important;
     width: auto;
     padding: 15px;
+    padding-bottom: 0;
     height: auto;
     margin: 15px -15px 0;
   }
@@ -420,6 +421,10 @@ footer .footer-blue .td .fa {
   border-bottom: 0;
 }
 
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
+
 .soc {
   margin: 0;
   padding: 12px 0 20px 0;
@@ -442,6 +447,10 @@ footer .footer-blue .td .fa {
 .soc li a {
   color: #707070;
   border-bottom: 0;
+}
+
+.soc li a:hover {
+  color: #2e8ce4;
 }
 
 @font-face {
